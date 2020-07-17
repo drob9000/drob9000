@@ -7,5 +7,4 @@ RUN apt update && \
        apt update && \
        apt install -y nordvpn=$VERSION && \
        apt remove -y wget nordvpn-release
-
 ENTRYPOINT ["/usr/sbin/nordvpnd", "&"]
